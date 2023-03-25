@@ -1,14 +1,5 @@
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+import HolbertonClass from "../8-hbtn_class.js";
 
-  toString() {
-    return `Person(name=${this.name}, age=${this.age})`;
-  }
-}
-
-const john = new Person("John", 30);
-
-console.log(john); // Output: Person(name=John, age=30)
+const hc = new HolbertonClass(12, "Mezzanine")
+console.log(Number(hc));
+console.log(String(hc));
