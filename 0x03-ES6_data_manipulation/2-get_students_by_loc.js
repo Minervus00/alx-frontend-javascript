@@ -7,6 +7,7 @@ export default function getStudentsByLocation(arr, city) {
       if (elm.location === city) {
         return elm;
       }
+      return false;
     },
   );
 }
