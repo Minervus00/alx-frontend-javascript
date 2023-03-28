@@ -3,7 +3,8 @@ export default function setFromArray(arr) {
   arr.map(
     (elm) => {
       setArr.add(elm);
-    }
-  )
+      return false;
+    },
+  );
   return setArr;
 }
