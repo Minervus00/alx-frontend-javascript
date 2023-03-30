@@ -1,6 +1,6 @@
 export default function cleanSet(set, startString) {
   const arr = [];
-  if (startString !== '') {
+  if (startString !== '' && typeof startString === 'string') {
     set.forEach(
       (elm) => {
         if (elm !== undefined && elm.startsWith(startString)) {
