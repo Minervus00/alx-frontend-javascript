@@ -25,8 +25,13 @@ const table = document.createElement('table');
 document.body.appendChild(table);
 
 studentsList.forEach((stud) => {
-	let tr = table.insertRow();
+	const tr = table.insertRow();
+	const nameCell = tr.insertCell();
+	const locationCell = tr.insertCell();
 
-	tr.insertCell().innerText = stud.firstName;
-	tr.insertCell().innerText = stud.location;
+	nameCell.innerText = stud.firstName;
+	locationCell.innerText = stud.location;
+	table.setAttribute('style', 'border: dashed 1px red');
+	nameCell.setAttribute('style', 'border: dashed 1px red');
+	locationCell.setAttribute('style', 'border: dashed 1px red');
 });
